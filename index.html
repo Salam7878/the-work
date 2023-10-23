@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">News</a></li>
+    <li><a href="">Contacts</a></li>
+    <li><a href="">About</a></li>
+   </ul>
+  <table>
+   <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Class</th>
+   </tr>
+   <tr>
+      <td>Salam</td>
+      <td>20</td>
+      <td>Unversity</td>
+   </tr>
+   <tr>
+    <td>Carlos</td>
+    <td>20</td>
+    <td>Unversity</td>
+   </tr>
+   <tr>
+      <td>David</td>
+      <td>12</td>
+      <td>JSS3</td>
+   </tr>
+   <tr>
+ <td>Onyekachi</td> 
+ <td>11</td>
+ <td>JSS2</td>
+   </tr>
+   <tr>
+      <td>Oreofe</td>
+      <td>8</td>
+      <td>basic 4</td>
+   </tr>
+  </table>
+<h1>Welcome To GFG</h1>
+<form action="/examples/actions/confirmation.php" method="post">
+   <label>Username: <input type="text" name="username"></label><br>
+   <label>Password: <input type="password" name="userpass"></label>
+   <input type="submit" value="Submit">
+</form>
+<form>
+   <input type="radio" name="gender" value="male" id="male">
+   <label for="male">Male</label>
+   <input type="radio" name="gender" value="female" id="female">
+   <label for="female">Female</label>
+</form>
+<form>
+   <input type="checkbox" name="sports" value="soccer" id="soccer">
+   <label for="soccer">Soccer</label>
+   <input type="checkbox" name="sports" value="cricket" id="cricket">
+   <label for="cricket">Cricket</label>
+   <input type="checkbox" name="sports" value="baseball" id="baseball">
+   <label for="baseball">Baseball</label>
+</form> 
+<form>
+   <label for="file-select">Upload:</label>
+   <input type="file" name="upload" id="file-select">
+</form>
+<form>
+   <label for="city">City:</label>
+   <select name="city" id="city">
+       <option value="sydney">Sydney</option>
+       <option value="melbourne">Melbourne</option>
+       <option value="cromwell">Cromwell</option>
+   </select>
+</form>
+<form action="/examples/html/action.php" method="post">
+   <label for="first-name">First Name:</label>
+   <input type="text" name="first-name" id="first-name">
+   <input type="submit" value="Submit">
+   <input type="reset" value="Reset">
+</form>
+<form>
+   <fieldset>
+       <legend>Name</legend>            
+       <label>Firstname: <input type="text" name="firstname"></label>            
+       <label>Lastname: <input type="text" name="lastname"></label>
+   </fieldset>
+   <fieldset>
+       <legend>Gender</legend>            
+       <label><input type="radio" name="gender" value="male"> Male</label>            
+       <label><input type="radio" name="gender" value="female"> Female</label>
+   </fieldset>
+   <fieldset>
+      <legend>Hobbies</legend>            
+       <label><input type="checkbox" name="hobbies" value="soccer"> Soccer</label>
+       <label><input type="checkbox" name="hobbies" value="cricket"> Cricket</label>
+       <label><input type="checkbox" name="hobbies" value="baseball"> Baseball</label>
+   </fieldset>
+   <fieldset>
+       <legend>Contact Details</legend>
+       <label>Email Address: <input type="email" name="email"></label>
+       <label>Phone Number: <input type="text" name="phone"></label>
+   </fieldset>
+</form>
+<style>
+   iframe {
+      width: 100%;
+      height: 500px;
+   }
+</style>
+</head>
+<body>
+ <iframe src="/examples/html/hello.html" name="myFrame"></iframe>
+ <p><a href="https://www.tutorialrepublic.com" target="myFrame">Open TutorialRepublic.com</a></p>
+ <script>
+   function getValue() {
+       var color = document.getElementById("mycolor").value;
+       alert(color);
+   }
+</script>
+</head>
+<body>
+   <form>
+       <label for="mycolor">Select Color:</label>
+       <input type="color" value="#00ff00" id="mycolor">
+       <button type="button" onclick="getValue();">Get Value</button>
+   </form>
+   <script>
+      function getValue() {
+          var date = document.getElementById("mydate").value;
+          alert(date);
+      }
+  </script>
+  </head>
+  <body>
+      <form>
+          <label for="mydate">Select Date:</label>
+          <input type="date" value="2019-04-15" id="mydate">
+          <button type="button" onclick="getValue();">Get Value</button>
+      </form>
+      <script>
+         function getValue() {
+             var datetime = document.getElementById("mydatetime").value;
+             alert(datetime);
+         }
+     </script>
+     </head>
+     <body>
+         <form>
+             <label for="mydatetime">Choose Date and Time:</label>
+             <input type="datetime-local" id="mydatetime">
+             <button type="button" onclick="getValue();">Get Value</button>
+         </form>
+         <style>
+            input[type="email"]:valid{
+                outline: 2px solid green;
+            }
+            input[type="email"]:invalid{
+                outline: 2px solid red;
+            }
+        </style>
+        <script>
+            function getValue() {
+                var email = document.getElementById("myemail").value;
+                alert(email);
+            }
+        </script>
+        </head>
+        <body>
+            <form>
+                <label for="myemail">Enter Email Address:</label>
+                <input type="email" id="myemail" required>
+                <button type="button" onclick="getValue();">Get Value</button>
+            </form>
+            <script>
+               function getValue() {
+                   var month = document.getElementById("mymonth").value;
+                   alert(month);
+               }
+           </script>
+           </head>
+           <body>
+               <form>
+                   <label for="mymonth">Select Month:</label>
+                   <input type="month" id="mymonth">
+                   <button type="button" onclick="getValue();">Get Value</button>
+               </form>
+               <style>
+                  input[type="number"]:valid{
+                      outline: 2px solid green;
+                  }
+                  input[type="number"]:invalid{
+                      outline: 2px solid red;
+                  }
+              </style>
+              <script>
+                  function getValue() {
+                      var number = document.getElementById("mynumber").value;
+                      alert(number);
+                  }
+              </script>
+              </head>
+              <body>
+                  <form>
+                      <label for="mynumber">Enter a Number:</label>
+                      <input type="number" min="1" max="10" step="0.5" id="mynumber">
+                      <button type="button" onclick="getValue();">Get Value</button>
+                  </form>
+                  <p><strong>Note</strong>: If you try to enter the number out of the range (1-10) or text character it will show error.</p>
+                  <script>
+                     function getValue() {
+                         var number = document.getElementById("mynumber").value;
+                         alert(number);
+                     }
+                 </script>
+                 </head>
+                 <body>
+                     <form>
+                         <label for="mynumber">Select a Number:</label>
+                         <input type="range" min="1" max="10" step="0.5" id="mynumber">    
+                         <button type="button" onclick="getValue();">Get Value</button>
+                     </form>
+                     <script>
+                        function getValue() {
+                            var term = document.getElementById("mysearch").value;
+                            alert(term);
+                        }
+                    </script>
+                    </head>
+                    <body>
+                        <form>
+                            <label for="mysearch">Search Website:</label>
+                            <input type="search" id="mysearch" placeholder="Type something...">
+                            <button type="button" onclick="getValue();">Get Value</button>
+                        </form>
+                        <script>
+                           function getValue() {
+                               var phone = document.getElementById("myphone").value;
+                               alert(phone);
+                           }
+                       </script>
+                       </head>
+                       <body>
+                           <form>
+                               <label for="myphone">Telephone Number:</label>
+                               <input type="tel" id="myphone" placeholder="xx-xxxx-xxxx" required>
+                               <button type="button" onclick="getValue();">Get Value</button>
+                           </form>
+                           <script>
+                              function getValue() {
+                                  var time = document.getElementById("mytime").value;
+                                  alert(time);
+                              }
+                          </script>
+                          </head>
+                          <body>
+                              <form>
+                                  <label for="mytime">Select Time:</label>
+                                  <input type="time" id="mytime">
+                                  <button type="button" onclick="getValue();">Get Value</button>
+                              </form>
+                              <video controls="controls" src="/examples/video/shuttle.mp4">
+                                Your browser does not support the HTML5 Video element.
+                            </video>
+                            <video controls="controls">
+                                <source src="/examples/video/shuttle.mp4" type="video/mp4">
+                                <source src="/examples/video/shuttle.ogv" type="video/ogg">
+                                Your browser does not support the HTML5 Video element.
+                            </video> 
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+                            <p>Source: <a href="https://www.youtube.com/watch?v=YE7VzlLtp-4" target="_blank" rel="nofollow">https://www.youtube.com/watch?v=YE7VzlLtp-4</a></p>
+                            <audio controls="controls" src="/examples/audio/birds.mp3">
+                                Your browser does not support the HTML5 audio element.
+                            </audio>
+                    
+                            <audio controls="controls">
+                                <source src="/examples/audio/birds.mp3" type="audio/mpeg">
+                                <source src="/examples/audio/birds.ogg" type="audio/ogg">
+                                Your browser does not support the HTML5 audio element.
+                            </audio>
+                            <p><a href="/examples/audio/sea.mp3">Track 1</a></p>
+                            <p><a href="/examples/audio/wind.mp3">Track 2</a></p>
+                            <object data="/examples/audio/sea.mp3"></object>
+                            <object data="/examples/audio/sea.ogg"></object>
+                            <embed src="/examples/audio/wind.mp3">
+                                <embed src="/examples/audio/wind.ogg">
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                                    <script>
+                                    // Check if the localStorage object exists
+                                    if(localStorage) {
+                                        $(document).ready(function() {
+                                            $(".save").click(function() {
+                                                // Get input name
+                                                var firstName = $("#firstName").val();
+                                                
+                                                // Store data
+                                                localStorage.setItem("first_name", firstName);
+                                                alert("Your first name is saved.");
+                                            });
+                                            $(".access").click(function() {
+                                                // Retrieve data
+                                                alert("Hi, " + localStorage.getItem("first_name"));
+                                            });
+                                        });
+                                    } else {
+                                        alert("Sorry, your browser do not support local storage.");
+                                    }
+                                    </script>
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                                    <script>
+                                    // Check if the localStorage object exists
+                                    if(localStorage) {
+                                        $(document).ready(function() {
+                                            $(".save").click(function() {
+                                                // Get input name
+                                                var firstName = $("#firstName").val();
+                                                
+                                                // Store data
+                                                localStorage.setItem("first_name", firstName);
+                                                alert("Your first name is saved.");
+                                            });
+                                            $(".access").click(function() {
+                                                // Retrieve data
+                                                alert("Hi, " + localStorage.getItem("first_name"));
+                                            });
+                                        });
+                                    } else {
+                                        alert("Sorry, your browser do not support local storage.");
+                                    }
+                                    </script>
+                             <script>
+                                function dragStart(e) {
+                                    // Sets the operation allowed for a drag source
+                                    e.dataTransfer.effectAllowed = "move";
+                                
+                                    // Sets the value and type of the dragged data
+                                    e.dataTransfer.setData("Text", e.target.getAttribute("id"));
+                                }
+                                function dragOver(e) {
+                                    // Prevent the browser default handling of the data
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                }
+                                function drop(e) {
+                                    // Cancel this event for everyone else
+                                    e.stopPropagation();
+                                    e.preventDefault();
+                                
+                                    // Retrieve the dragged data by type
+                                    var data = e.dataTransfer.getData("Text");
+                                
+                                    // Append image to the drop box
+                                    e.target.appendChild(document.getElementById(data));
+                                }
+                            </script>
+                            <style>
+                                #dropBox {
+                                    width: 200px;
+                                    height: 200px;
+                                    border: 5px dashed gray;
+                                    background: lightyellow;
+                                    text-align: center;
+                                    margin: 20px 0;
+                                    color: orange;
+                                }
+                                #dropBox img {
+                                    margin: 10px;
+                                }
+                            </style>
+                            </head>
+                            <body>
+                                <h2>Drag and Drop Demo</h2>
+                                <p>Drag and drop the image into the drop box:</p>
+                                <div id="dropBox" ondragover="dragOver(event);" ondrop="drop(event);">
+                                    <!--Dropped image will be inserted here-->
+                                </div>
+                                <img src="/examples/images/kites.jpg" id="dragA" draggable="true" ondragstart="dragStart(event);" width="180" height="180" alt="Flying Kites">
+                                <style>
+                                    .box {
+                                        margin: 50px;
+                                        width:153px;
+                                        height:103px;
+                                        background: url("/examples/images/tortoise-transparent.png") no-repeat;
+                                        position: relative;
+                                        /* Chrome, Safari, Opera */
+                                        -webkit-animation-name: moveit;
+                                        -webkit-animation-duration: 2s;
+                                        /* Standard syntax */
+                                        animation-name: moveit;
+                                        animation-duration: 2s;
+                                    }
+                                     
+                                    /* Chrome, Safari, Opera */
+                                    @-webkit-keyframes moveit {
+                                        from {left: 0;}
+                                        to {left: 50%;}
+                                    }
+                                     
+                                    /* Standard syntax */
+                                    @keyframes moveit {
+                                        from {left: 0;}
+                                        to {left: 50%;}
+                                    }
+                                    
+                                </style>
+                                                                                                             
+                                                                                                                                                                                                                                                                       
+  </html>
